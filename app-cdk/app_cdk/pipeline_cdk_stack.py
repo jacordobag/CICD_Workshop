@@ -85,7 +85,7 @@ class PipelineCdkStack(Stack):
         ssmParameter = ssm.StringParameter(
             self, 'SignerProfileARN',
             parameter_name='signer-profile-arn',
-            string_value='arn:aws:signer:us-east-2:188788289838:/signing-profiles/ecr_signing_profile'
+            string_value='arn:aws:signer:us-east-1:096077176993:/signing-profiles/ecr_signing_profile/pZnuVBQCNd'
         )
    
         docker_build_project.add_to_role_policy(iam.PolicyStatement(
